@@ -14,7 +14,7 @@ export SUDO_PROMPT="passwd: "
 export TERMINAL="wezterm"
 export BROWSER="brave"
 export VISUAL="code"
-export EDITOR="code"
+export EDITOR="nvim"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
