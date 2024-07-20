@@ -69,7 +69,14 @@ set-wallpaper() {
 }
 # new termian window in actual path
 nw() {
-	wezterm start --always-new-process --cwd ${PWD} &
+	wezterm start --cwd ${PWD} && clear
+}
+
+alarm() {
+	# usage:
+	#     alarm <description> <minutes>
+	echo "alarm set in $1 minutes"
+	sleep $(($1 * 60))s && mpg123 ~/Downloads/dark-sitar-7546.mp3
 }
 
 # vim:ft=sh

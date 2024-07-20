@@ -15,7 +15,6 @@ aliases
 utility
 options
 plugins
-keybinds
 prompt
 EOF
 
@@ -34,8 +33,7 @@ export LC_MEASUREMENT="en_US.UTF-8"
 export LC_IDENTIFICATION="en_US.UTF-8"
 
 neofetch
-# vim:ft=zsh:nowrap
 
 # fnm
 export PATH="/home/huilensolis/.local/share/fnm:$PATH"
-eval "`fnm env`"
+eval "$(fnm env --use-on-cd)"
